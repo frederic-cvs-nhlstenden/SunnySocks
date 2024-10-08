@@ -5,16 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
-    <link rel="stylesheet" href="sunnysocks/styles/normalize.css" type="text/css">
-    <link rel="stylesheet" href="sunnysocks/styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="../styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="cart.css" type="text/css">
 </head>
 
 <body>
-    <!-- Products -->
-     <h3>Classic Uni Color</h3>
-     <p>Size: 37-40</p>
-     <p>Color: Green</p>
-     <h4>€6.75</h4>
+    <!-- Green Sock -->
+    <div class="uni-green-product">
+
+        <img class="uni-green-img"src="../assets/sunny_socks_photos/packaging/png/catalogus_sokken_uni_green.png" alt="Uni_Green_Sock">
+
+        <div class="ugp-details">
+            <h4><b>Classic Uni Color</b></h4>
+            <p><b>Size:</b> 37-40</p>
+            <p><b>Color:</b> Green</p>
+            <h4>€6.75</h4>
+        </div>
+
+        <div class="ugp-num-input">
+            <button class="minus" onclick="decrease()">-</button>
+            <input type="number" id="quantity" value="0" min="0">
+            <button class="plus" onclick="increase()">+</button>
+        </div>
+    </div>
+
+    <script>
+        function decrease()
+        {
+            let input = document.getElementById('quantity');
+            if (parseInt(input.value) > 0) {
+                input.value = parseInt(input.value)-1;
+            }
+        }
+
+        function increase()
+        {
+            let input = document.getElementById('quantity');
+            input.value = parseInt(input.value)+1;
+        }
+    </script>
+
 
 </body>
 
