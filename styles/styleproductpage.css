@@ -11,13 +11,13 @@
 }
 
 body {
-  display: grid;
-  width: 100dvw;
-  height: 100dvh;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  background-image: url(../assets/sunny_illustrations/png/background-socks.png);
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: overlay;
-  background-repeat: repeat;
-  background-size: auto;
+  margin-block: 100px;
+}
+
+img {
+  max-width: 200px;
+}
+
+.productimage {
+  grid-column: 2;
 }
