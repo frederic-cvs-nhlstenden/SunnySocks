@@ -1,0 +1,51 @@
+body {
+    background-color: #ff6347;
+    align-items: center;
+    display: flex;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.productbox {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+.image-container {
+    background-color: white;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.productbox img {
+    width: 40%;
+    height: auto;
+}
+.productbox h2 {
+    font-size: 1em;
+    margin: 5px 0;
+    font-weight: normal;
+    color: white;
+}
+.price {
+    margin: 0;
+    color: white;
+}
+.discounted-price {
+    font-family: "Nexa Bold";
+}
+.original-price {
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
