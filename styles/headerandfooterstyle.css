@@ -1,0 +1,12 @@
+header {
+    background-color:rgb(79, 187, 162);
+    height: 90px;
+}
+
+footer {
+    background-color: rgb(79, 187, 162);
+    padding: 20px;
+
+    height: 400px;
+    width: 100%;
+}
