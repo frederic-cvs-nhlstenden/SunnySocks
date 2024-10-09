@@ -1,47 +1,63 @@
-.uni-green-product
+/* Product Display */
+.cart-container
 {
     display: flex;
+    flex-direction: column;
+    width: 20px;
+    margin: 20px auto;
+
+}
+
+/* Product Parts */
+.product-item
+{
+    display: grid;
+    grid-template-columns: 80px 1fr auto auto;
     align-items: center;
     background-color: #dbd8d8;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid #51b2a2;
     width: 480px;
-    margin: 50px 10%;
 }
 
-.uni-green-img
+
+/* Product Image */
+.uni-green-img, .uni-yellow-img, .uni-pink-img
 {
     background-color: #ebe7e7;
     width: 80px;
     border-radius: 10px;
 }
 
-.ugp-details 
+/* Product Details  */
+.product-details 
 {
 	flex-grow: 1;
     margin-left: 20px;
 }
 
-.ugp-details h4
+.product-details h4
 {
     margin: 5px 0;
     font-size: 18px;
     font-weight: bolder;
 }
 
-.ugp-details p
+.product-details p
 {
     margin: 5px 0;
     color: #777;
 }
 
-.ugp-details b
+.product-details b
 {
     color: black;
     font-weight: bolder;
 }
 
-.ugp-num-input
+/* Button */
+.up-num-input
 {
     display: flex;
     align-items: center;
@@ -51,37 +67,37 @@
     padding: 5px;
 }
 
-.ugp-num-input button
+.up-num-input button
 {
     border: none;
     background: none;
     font-size: 20px;
-    padding: 0 10px;
+    padding: 0 15px;
     cursor: pointer;
     color: #555;
 }
 
-.ugp-num-input button:hover
+.up-num-input button:hover
 {
     color:#f15b39;
 }
 
-.ugp-num-input input
+.up-num-input input
 {
     text-align: center;
-    width: 100px;
+    width: 50px;
     border: none;
     background: none;
     font-size: 20px;
 }
 
-.ugp-num-input .minus
+.up-num-input .minus1
 {
     font-size: 25px;
     color: #999;
 }
 
-.ugp-num-input .plus
+.up-num-input .plus1
 {
     font-size: 25px;
     color: #007bff;
