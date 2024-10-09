@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/Overlays/css/stylechatbot.css" type="text/css">
+</head>
+
+<body>
+    <div id="chatbot-overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="closeChatbot()">&times;</span>
+            <h2>How can I help you?</h2>
+            <div id="chat-window">
+                
+            </div>
+            <input type="text" id="chat-input" placeholder="Type a message...">
+        </div>
+    </div>
+
+    <div>
+        <button onclick="openChatbot()">Open Chatbot</button>
+    </div>
+    
+    <script>
+        function openChatbot() 
+        {
+            document.getElementById("chatbot-overlay").style.display = "block";
+        }
+
+        function closeChatbot() 
+        {
+            document.getElementById("chatbot-overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

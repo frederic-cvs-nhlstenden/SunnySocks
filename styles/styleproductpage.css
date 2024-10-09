@@ -1,0 +1,28 @@
+:root {
+  --color-blue: #1e407a;
+  --color-green: #51b2a2;
+  --color-pink: #e990b9;
+  --color-orange: #f15b39;
+  --color-yelow: #fecd3e;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin-block: 100px;
+}
+
+img {
+  max-width: 200px;
+}
+
+.productimage {
+  grid-column: 2;
+}
+
+.error {
+  grid-column: 2/4;
+  justify-self: center;
+}

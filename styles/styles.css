@@ -1,0 +1,36 @@
+:root {
+  --color-blue: #1e407a;
+  --color-green: #51b2a2;
+  --color-pink: #e990b9;
+  --color-orange: #f15b39;
+  --color-yelow: #fecd3e;
+}
+
+@font-face {
+  font-family: "Nexa Bold";
+  src: url("../assets/fonts/Nexa\ Bold.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa Light";
+  src: url("../assets/fonts/Nexa\ Light.otf") format("opentype");
+  font-style: normal;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  display: grid;
+  width: 100dvw;
+  height: 100dvh;
+  grid-template-columns: repeat(4, 1fr);
+  background-image: url(../assets/sunny_illustrations/png/background-socks.png);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+  background-size: auto;
+  font-family: "Nexa Light", sans-serif;
+}
