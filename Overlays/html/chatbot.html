@@ -5,37 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <link rel="stylesheet" href="/Overlays/css/stylechatbot.css" type="text/css">
+    <link rel="stylesheet" href="../css/stylechatbot.css" type="text/css">
 </head>
 
 <body>
-    <div id="chatbot-overlay" class="overlay">
-        <div class="overlay-content">
-            <span class="close" onclick="closeChatbot()">&times;</span>
-            <h2>How can I help you?</h2>
-            <div id="chat-window">
-                
-            </div>
-            <input type="text" id="chat-input" placeholder="Type a message...">
+    <div id="chatbot" class="chatbot">
+        <div class="chat-header">
+            <h2>Chatbot</h2>
+            <button id="close-btn">X</button>
+        </div>
+        <div class="chat-body">
+            <p>Have you checked our support? We're happy to help with further issues.</p>
+            <input type="text" placeholder="Type here..." id="user-input">
+            <button id="send-btn">Send</button>
         </div>
     </div>
-
-    <div>
-        <button onclick="openChatbot()">Open Chatbot</button>
-    </div>
-    
-    <script>
-        function openChatbot() 
-        {
-            document.getElementById("chatbot-overlay").style.display = "block";
-        }
-
-        function closeChatbot() 
-        {
-            document.getElementById("chatbot-overlay").style.display = "none";
-        }
-    </script>
-
+    <img src="/SunnySocks/assets/icons/svg/icon-chatbot.svg" id="chat-icon" alt="Chat Icon" />
+    <script src="../js/chatbot.js"></script>
 </body>
 
 </html>
