@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+
+body {
+  display: unset;
+}
+
+#hero-section {
+  display: flex;
+  height: 100vh;
+}
+
+.hero-background {
+  background-color: var(--color-blue);
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70%;
+  width: 70%;
+}
+
+img {
+  width: 50vw;
+}
+
+.btn {
+  font-family: "Nexa Bold";
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Nexa Bold";
+  font-size: 10rem;
+  color: #fff;
+  margin: 0;
+}
+
+.description {
+  font-family: "Nexa Bold";
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 4vh;
+}
+
+#features {
+    background-color: var(--color-green);
+    height: 20vh;
+}
