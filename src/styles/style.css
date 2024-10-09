@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('../../assets/fonts/Nexa\ Bold.otf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('../../assets/fonts/Nexa\ Light.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    display: flex;
+    width: 83%;
+    height: fit-content;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    color: white;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    font-family: "Nexa";
+    background-image: url('../../assets/sunny_illustrations/png/background-socks.png');
+    background-size: auto;
+    }
+h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46.8px;
+}
+p{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31.2px;
+}
+.container-wrapper{
+    height: fit-content;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-1{
+    background-color: #F05A39;
+}
+.container-2{
+    background-color: #50B1A1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container-3{
+    background-color: #E890B7;
+}
+.container-4{
+    background-color: #1D4079;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.text-area {
+    width: 48%;
+    height: fit-content;
+
+}
+.image-factory {
+    width: 40%;
+    padding: 15px;
+    margin-left: 40px;
+    border-radius: 48px;
+    margin-right: 50px;
+}
+
