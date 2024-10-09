@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/normalize.css" type="text/css">
-    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="../styles/global.css" type="text/css">
     <link rel="stylesheet" href="../styles/styleproductpage.css" type="text/css">
     <link rel="icon" href="../assets/logos/png/sunny_logos_white.png" type="image/png">
     <title>Sunny Socks</title>
