@@ -21,3 +21,8 @@ img {
 .productimage {
   grid-column: 2;
 }
+
+.error {
+  grid-column: 2/4;
+  justify-self: center;
+}
