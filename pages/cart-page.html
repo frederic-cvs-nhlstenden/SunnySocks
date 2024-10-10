@@ -25,7 +25,7 @@
                 <h4><b>Classic Uni Color</b></h4>
                 <p><b>Size:</b> 37-40</p>
                 <p><b>Color:</b> Green</p>
-                <h4><b>€6.75</b></h4>
+                <h3><b>€6.75</b></h3>
             </div>
 
             <div class="up-num-input">
@@ -33,6 +33,11 @@
                 <input type="number" id="quantity1" value="1" min="0">
                 <button class="plus" onclick="increaseg()">+</button>
             </div>
+
+            <div class="product-action">
+                <button class="delete-button">🗑️</button>
+            </div>
+
         </div>
 
         <!-- Yellow Sock -->
@@ -45,7 +50,7 @@
                 <h4><b>Classic Uni Color</b></h4>
                 <p><b>Size:</b> 37-40</p>
                 <p><b>Color:</b> Yellow</p>
-                <h4><b>€6.75</b></h4>
+                <h3><b>€6.75</b></h3>
             </div>
 
             <div class="up-num-input">
@@ -53,10 +58,15 @@
                 <input type="number" id="quantity2" value="1" min="0">
                 <button class="plus" onclick="increasey()">+</button>
             </div>
+
+            <div class="product-action">
+                <button class="delete-button">🗑️</button>
+            </div>
+
         </div>
 
-         <!-- Pink Sock -->
-         <div class="uni-pink-product product-item">
+        <!-- Pink Sock -->
+        <div class="uni-pink-product product-item">
 
             <img src="../assets/sunny_socks_photos/packaging/png/catalogus_sokken_uni_pink.png" alt="Uni-pink-sock"
                 class="uni-pink-img">
@@ -65,7 +75,7 @@
                 <h4><b>Classic Uni Color</b></h4>
                 <p><b>Size:</b> 37-40</p>
                 <p><b>Color:</b> Pink</p>
-                <h4><b>€6.75</b></h4>
+                <h3><b>€6.75</b></h3>
             </div>
 
             <div class="up-num-input">
@@ -73,53 +83,16 @@
                 <input type="number" id="quantity3" value="1" min="0">
                 <button class="plus" onclick="increasep()">+</button>
             </div>
+
+            <div class="product-action">
+                <button class="delete-button">🗑️</button>
+            </div>
+
         </div>
 
     </div>
 
-    <script>
-        
-        // Green
-        function decreaseg() {
-            let input = document.getElementById('quantity1');
-            if (parseInt(input.value) > 0) {
-                input.value = parseInt(input.value) - 1;
-            }
-        }
-
-        function increaseg() {
-            let input = document.getElementById('quantity1');
-            input.value = parseInt(input.value) + 1;
-        }
-
-        //Yellow
-        function decreasey() {
-            let input = document.getElementById('quantity2');
-            if (parseInt(input.value) > 0) {
-                input.value = parseInt(input.value) - 1;
-            }
-        }
-
-        function increasey() {
-            let input = document.getElementById('quantity2');
-            input.value = parseInt(input.value) + 1;
-        }
-
-        //Pink
-        function decreasep() {
-            let input = document.getElementById('quantity3');
-            if (parseInt(input.value) > 0) {
-                input.value = parseInt(input.value) - 1;
-            }
-        }
-
-        function increasep() {
-            let input = document.getElementById('quantity3');
-            input.value = parseInt(input.value) + 1;
-        }
-
-    </script>
-
+    <script src="../javascript/cart-page.js"></script>
 
 </body>
 

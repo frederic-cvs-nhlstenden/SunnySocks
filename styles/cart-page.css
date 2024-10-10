@@ -3,8 +3,10 @@
 {
     display: flex;
     flex-direction: column;
-    width: 20px;
-    margin: 20px auto;
+    margin: 100px 150px auto;
+    border-radius: 10px ;
+    border: 2px solid #51b2a2;
+    width: 650px;
 
 }
 
@@ -13,12 +15,10 @@
 {
     display: grid;
     grid-template-columns: 80px 1fr auto auto;
-    align-items: center;
-    background-color: #dbd8d8;
+    align-items: end;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #51b2a2;
-    width: 480px;
 }
 
 
@@ -26,8 +26,9 @@
 .uni-green-img, .uni-yellow-img, .uni-pink-img
 {
     background-color: #ebe7e7;
+    height: fit-content;
     width: 80px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* Product Details  */
@@ -35,6 +36,7 @@
 {
 	flex-grow: 1;
     margin-left: 20px;
+    padding-bottom: 20px;
 }
 
 .product-details h4
@@ -44,13 +46,23 @@
     font-weight: bolder;
 }
 
+.product-details h3
+{
+    margin: 0px 0px;
+    padding-top: 45px;
+    font-weight: bolder;
+}
+
 .product-details p
 {
     margin: 5px 0;
     color: #777;
+    font-size: small;
+    font-weight: bolder;
+    
 }
 
-.product-details b
+.product-details > p > b
 {
     color: black;
     font-weight: bolder;
@@ -60,11 +72,12 @@
 .up-num-input
 {
     display: flex;
-    align-items: center;
+    align-items: end;
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 20px ;
     background-color: #f3f3f3;
     padding: 5px;
+    box-shadow: 10px rgb(172, 171, 171);
 }
 
 .up-num-input button
@@ -72,9 +85,10 @@
     border: none;
     background: none;
     font-size: 20px;
-    padding: 0 15px;
+    padding: 0 5px;
     cursor: pointer;
     color: #555;
+    width: 40px;
 }
 
 .up-num-input button:hover
@@ -84,8 +98,8 @@
 
 .up-num-input input
 {
-    text-align: center;
-    width: 50px;
+    text-align: right;
+    width: 30px;
     border: none;
     background: none;
     font-size: 20px;
@@ -101,4 +115,27 @@
 {
     font-size: 25px;
     color: #007bff;
+}
+
+/* Delete Button */
+.product-action
+{
+    grid-template-columns: 3/5;
+    margin-bottom: 110px;
+}
+
+.delete-button
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f15b39;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.delete-button :hover
+{
+    color: #d9534f;
 }
